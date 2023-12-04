@@ -1,4 +1,5 @@
 from PPlay.gameimage import *
+from PPlay.animation import *
 from PPlay.sprite import *
 
 class Area(Sprite):
@@ -7,8 +8,10 @@ class Area(Sprite):
         self.width = width
         self.height = height
     
-    def change_frame(self, frame):
-        self.frame = frame
-        self.img = self.frames[frame]
+    def change_frame(self, player):
+        if player.collided(self):
+            self.curr_frame = 1
+        else:
+            self.curr_frame = 0
 
         
