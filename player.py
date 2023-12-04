@@ -18,7 +18,3 @@ class Player(Sprite):
     def win(self):
         self.win = True
 
-class Enemy(Sprite):
-    def __init__(self, image_file, speed, frames=1):
-        super().__init__(image_file, frames)
-        self.speed = speed
