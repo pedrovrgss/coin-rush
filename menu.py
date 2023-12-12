@@ -21,7 +21,7 @@ class Button(Sprite):
 
 def menu():
     WINDOW = Window(1300, 800)
-    WINDOW.set_title("Coin Rush - Beta 2.0.1")
+    WINDOW.set_title("Coin Rush - v1.0.1")
     KEYBOARD = Keyboard()
 
     play = Button("assets/play.png")
